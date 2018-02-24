@@ -13,6 +13,7 @@
 #define CART_QUARTERMASTER	(1<<12)
 #define CART_HYDROPONICS	(1<<13)
 #define CART_DRONEPHONE	(1<<14)
+#define CART_PARAMEDIC  (1<<15)
 
 
 /obj/item/cartridge
@@ -124,6 +125,12 @@
 	desc = "Complete with integrated radio signaler!"
 	icon_state = "cart-tox"
 	access = CART_REAGENT_SCANNER | CART_ATMOS
+
+/obj/item/cartridge/paramedic
+	name = "\improper ParaHotline cartridge"
+	icon_state = "cart-m"
+	access = CART_MEDICAL
+	bot_access_flags = MED_BOT
 
 /obj/item/cartridge/signal/Initialize()
 	. = ..()
@@ -715,3 +722,4 @@ Code:
 
 //This is called for special abilities of cartridges
 /obj/item/cartridge/proc/special(mov/living/user, list/params)
+

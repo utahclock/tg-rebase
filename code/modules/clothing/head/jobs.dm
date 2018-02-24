@@ -177,3 +177,10 @@
 	name = "treasure hunter's fedora"
 	desc = "You got red text today kid, but it doesn't mean you have to like it."
 	icon_state = "curator"
+
+//Clerk
+/obj/item/clothing/head/clerkcap
+	name = "clerk's hat"
+	desc = "It's a hat used by clerk's to help keep dust out of thier eyes."
+	icon_state = "clerkcap"
+	item_state = "clerkcap"

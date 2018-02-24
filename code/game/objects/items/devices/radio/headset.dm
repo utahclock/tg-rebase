@@ -181,6 +181,13 @@
 	icon_state = "mine_headset"
 	keyslot = new /obj/item/device/encryptionkey/headset_mining
 
+/obj/item/device/radio/headset/headset_medcargo
+	name = "mining medic radio headset"
+	desc = "A headset that is a result of the mating between medical and cargo. \nTo access the medical channel, use :m. For cargo, use :u."
+	icon_state = "med_headset"
+	item_state = "headset"
+	keyslot = new /obj/item/device/encryptionkey/headset_medsup
+
 /obj/item/device/radio/headset/headset_srv
 	name = "service radio headset"
 	desc = "Headset used by the service staff, tasked with keeping the station full, happy and clean.\nTo access the service channel, use :v."

@@ -587,3 +587,12 @@
 	icon_state = "bedsheet"
 	user_vars_to_edit = list("name" = "Spooky Ghost", "real_name" = "Spooky Ghost" , "incorporeal_move" = INCORPOREAL_MOVE_BASIC, "appearance_flags" = KEEP_TOGETHER|TILE_BOUND, "alpha" = 150)
 	alternate_worn_layer = ABOVE_BODY_FRONT_LAYER //so the bedsheet goes over everything but fire
+
+/obj/item/clothing/suit/hooded/wintercoat/engineering/tcomms
+	name = "signal technician's winter coat"
+	icon_state = "coatsignaltech"
+	allowed = list(/obj/item/device/flashlight,/obj/item/tank/internals/emergency_oxygen,/obj/item/device/radio,/obj/item/device/analyzer,/obj/item/device/multitool,/obj/item/device/assembly/signaler)
+	hoodtype = /obj/item/clothing/head/hooded/winterhood/engineering/tcomms
+
+/obj/item/clothing/head/hooded/winterhood/engineering/tcomms
+	icon_state = "winterhood_signaltech"

@@ -15,6 +15,7 @@ Slovenian    =    Council Member
 Atomicapples    =    Council Member
 Oisin100    =    Council Member
 AsV9    =    Head Coder
+Utahclock = Head Coder
 
 ktlwjec    =    Senior Admin
 

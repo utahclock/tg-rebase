@@ -12,6 +12,7 @@
 #define ROBOTICIST		(1<<8)
 #define AI_JF				(1<<9)
 #define CYBORG			(1<<10)
+#define SIGNALTECH      (1<<11)
 
 
 #define MEDSCI			(1<<1)
@@ -23,6 +24,9 @@
 #define DOCTOR			(1<<4)
 #define GENETICIST		(1<<5)
 #define VIROLOGIST		(1<<6)
+#define MMEDIC			(1<<7)
+#define PARAMEDIC		(1<<8)
+#define PSYCH			(1<<9)
 
 
 #define CIVILIAN			(1<<2)
@@ -41,3 +45,5 @@
 #define CLOWN				(1<<11)
 #define MIME				(1<<12)
 #define ASSISTANT			(1<<13)
+#define CLERK               (1<<14)
+#define TOUR				(1<<15)

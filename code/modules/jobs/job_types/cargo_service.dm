@@ -166,6 +166,18 @@ Bartender
 	backpack_contents = list(/obj/item/storage/box/beanbag=1,/obj/item/book/action_granting/drink_fling=1)
 	shoes = /obj/item/clothing/shoes/laceup
 
+/datum/job/bartender/space
+	title = "Space Bartender"
+	flag = null
+	faction = "A cold beer and the outstreched depths of space"
+	department_head = null
+	department_flag = null
+	minimal_access = list(ACCESS_BAR, ACCESS_KITCHEN)
+	total_positions = 0
+	spawn_positions = 0
+	department_head = null
+	department_flag = null
+
 /*
 Cook
 */

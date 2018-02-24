@@ -64,6 +64,8 @@
 #define ACCESS_WEAPONS 66 //Weapon authorization for secbots
 #define ACCESS_NETWORK 67
 #define ACCESS_CLONING 68 //Cloning room
+#define ACCESS_PARAMEDIC 69 //Paramedic Office
+#define ACCESS_TCOM_ADMIN 70
 
 	//BEGIN CENTCOM ACCESS
 	/*Should leave plenty of room if we need to add more access levels.

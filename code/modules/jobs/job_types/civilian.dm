@@ -34,6 +34,7 @@ Clown
 		/obj/item/reagent_containers/spray/waterflower = 1,
 		/obj/item/reagent_containers/food/snacks/grown/banana = 1,
 		/obj/item/device/instrument/bikehorn = 1,
+		/obj/item/whoopee = 1
 		)
 
 	implants = list(/obj/item/implant/sad_trombone)
@@ -107,7 +108,11 @@ Mime
 	if(H.mind)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/aoe_turf/conjure/mime_wall(null))
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/mime/speak(null))
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/mime(null))
 		H.mind.miming = 1
+
+	H.rename_self("mime")
+	log_game("[H.real_name]/[H.ckey] joined the round as [H.job].")
 
 /*
 Curator
@@ -197,3 +202,74 @@ Lawyer
 	if(J.lawyers>1)
 		uniform = /obj/item/clothing/under/lawyer/purpsuit
 		suit = /obj/item/clothing/suit/toggle/lawyer/purple
+/*
+Tourist
+*/
+
+
+
+/datum/job/tourist
+	title = "Tourist"
+	flag = TOUR
+	department_flag = CIVILIAN
+	faction = "Station"
+	total_positions = -1
+	spawn_positions = 0
+	supervisors = "the head of personnel"
+	selection_color = "#dddddd"
+	access = list()
+	minimal_access = list()
+
+	outfit = /datum/outfit/job/tourist
+
+/datum/outfit/job/tourist
+	name = "Tourist"
+
+	uniform = /obj/item/clothing/under/tourist
+	shoes = /obj/item/clothing/shoes/sneakers/black
+	ears = /obj/item/device/radio/headset
+	belt = /obj/item/device/pda
+	backpack_contents = list(/obj/item/device/camera_film, /obj/item/stack/spacecash/c20, /obj/item/stack/spacecash/c20, /obj/item/stack/spacecash/c20)
+	r_hand =  /obj/item/device/camera
+	l_pocket = /obj/item/device/camera_film
+	r_pocket = /obj/item/device/camera_film
+
+
+
+/*
+Clerk
+*/
+
+
+
+/datum/job/clerk
+	title = "Clerk"
+	flag = CLERK
+	department_head = list("Head of Personnel")
+	department_flag = CIVILIAN
+	faction = "Station"
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the head of personnel"
+	selection_color = "#dddddd"
+	access = list(ACCESS_MANUFACTURING)
+	minimal_access = list(ACCESS_MANUFACTURING)
+
+	outfit = /datum/outfit/job/clerk
+
+/datum/outfit/job/clerk
+	name = "Clerk"
+
+	belt = /obj/item/device/pda
+	ears = /obj/item/device/radio/headset/headset_srv
+	uniform = /obj/item/clothing/under/rank/clerk
+	shoes = /obj/item/clothing/shoes/sneakers/black
+	head = /obj/item/clothing/head/clerkcap
+
+
+//Clerk
+/obj/item/clothing/head/clerkcap
+	name = "clerk's hat"
+	desc = "It's a hat used by clerk's to help keep dust out of thier eyes."
+	icon_state = "clerkcap"
+	item_state = "clerkcap"
